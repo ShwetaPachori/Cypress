@@ -17,14 +17,14 @@ steps:
 
 - script: |
     npm install
-  displayName: 'npm install'
-- task: Npm@1
-  inputs:
-    command: 'custom'
-    customCommand: 'Run Cypress Tests'
+  displayName: 'Install Node Dependencies'
+
+- script: |
+    npm test
+  displayName: 'Run Cypress Tests'
+
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: '*.xml'
-    searchFolder: '$(System.DefaultWorkingDirectory)/cypress/reports/junit'
-    testRunTitle: 'Publish Results'
+    testResultsFiles: 'cypress/reports/junit/*.xml'
+    testRunTitle: 'Cypress-Cucumber Execution Report'
