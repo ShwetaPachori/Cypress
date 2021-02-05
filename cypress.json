@@ -1,0 +1,11 @@
+{
+  "video":true,
+  "screenshotsfolder": "/videos/Cucumber",
+  "chromeWebSecurity": false,
+  "testFiles": "**/*.feature",
+  "projectId": "tyf6xq",
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions":{
+    "configFile":"reporterOption.json"
+  }
+}
