@@ -9,6 +9,10 @@
         "mochawesome-merge": "4.2.0",
         "mochawesome-report-generator": "5.1.0"
     },
+    "scripts": {
+    "cypress:open": "cypress open",
+    "cy:run": "npx cypress run"
+  },
     "cypress-cucumber-preprocessor": {
         "nonGlobalStepDefinitions": true
     }
