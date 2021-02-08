@@ -26,5 +26,5 @@ steps:
 - task: PublishTestResults@2
   inputs:
     testResultsFormat: 'JUnit'
-    testResultsFiles: 'cypress/reports/junit/*.xml'
+    testResultsFiles: 'cypress/test-results/*.xml'
     testRunTitle: 'Cypress-Cucumber Execution Report'
